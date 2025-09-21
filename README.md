@@ -15,9 +15,11 @@ pip install torch --index-url https://download.pytorch.org/whl/cu126
 pip install cupy-cuda12x
 pip install torchpq
 pip install git+https://github.com/fraunhoferhhi/PLAS.git
-pip install sogs
+pip install -e .
 ```
 
 ## Usage
 
-`sogs-compress --input-ply your_ply_file.ply --output-dir directory_to_store_images_and_metadata`
+```
+sogs-compress --ply your_ply_file.ply --output-dir directory_to_store_images_and_metadata
+```
